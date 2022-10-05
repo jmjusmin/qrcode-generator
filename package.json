@@ -1,0 +1,22 @@
+{
+  "name": "qrcodegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "complie:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmjusmin/qrcode-generator.git"
+  },
+  "author": "jmjusmin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmjusmin/qrcode-generator/issues"
+  },
+  "homepage": "https://github.com/jmjusmin/qrcode-generator#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
