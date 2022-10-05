@@ -1,3 +1,7 @@
-body {
-  background-color: red;
-}
+@import 'abstracts/variable';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'layout/inputSection';
+@import 'layout/outputSection';
