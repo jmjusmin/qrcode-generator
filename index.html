@@ -17,19 +17,46 @@
     <main>
       <section id="input">
         <h1>QR code generator</h1>
-        <form action="#">
-          <input type="text" class="" placeholder="Place your URL here..." />
-          <button href="#" class="btn btn--main">serach</button>
-        </form>
+        <input
+          type="text"
+          class="searchBar"
+          id="inputLink"
+          placeholder="Place your URL here..."
+          required
+        />
+        <fieldset>
+          <input
+            type="radio"
+            id="transparent"
+            name="bg_choice"
+            onclick="handleRadio(this.value)"
+            value="_transparent_"
+          />
+          <label for="bg_transparent">Transparent</label><br />
+          <input
+            type="radio"
+            id="white"
+            name="bg_choice"
+            onclick="handleRadio(this.value)"
+            value="_"
+          />
+          <label for="bg_white">White</label><br />
+        </fieldset>
+
+        <label for="size">Size:</label>
+        <select name="size" id="size">
+          <option value="2">Small</option>
+          <option value="4">Meduim</option>
+          <option value="6">Large</option>
+          <option value="12">X-Large</option>
+        </select>
+        <button href="#" class="btn btn--main">serach</button>
       </section>
       <section id="output">
-        <div class="output--qr">
-          <img
-            src="https://qrtag.net/api/qr_6.svg?url=https://www.ordersukhothaibellevue.com/order/"
-            alt="qrtag"
-          />
+        <div class="output--qr hidden">
+          <img src="#" alt="qrtag" id="output--img" />
           <!-- https://www.qrtag.net/api/ -->
-          <a href="" class="btn btn--download"></a>
+          <a href="" class="btn btn--download">Download</a>
         </div>
       </section>
     </main>
