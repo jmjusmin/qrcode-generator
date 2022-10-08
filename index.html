@@ -29,17 +29,11 @@
             type="radio"
             id="transparent"
             name="bg_choice"
-            onclick="handleRadio(this.value)"
             value="_transparent_"
+            checked="checked"
           />
           <label for="bg_transparent">Transparent</label><br />
-          <input
-            type="radio"
-            id="white"
-            name="bg_choice"
-            onclick="handleRadio(this.value)"
-            value="_"
-          />
+          <input type="radio" id="white" name="bg_choice" value="_" />
           <label for="bg_white">White</label><br />
         </fieldset>
 
@@ -57,6 +51,9 @@
           <img src="#" alt="qrtag" id="output--img" />
           <!-- https://www.qrtag.net/api/ -->
           <a href="" class="btn btn--download">Download</a>
+        </div>
+        <div class="output--qr-error hidden">
+          <h3 style="color: black">Try again...</h3>
         </div>
       </section>
     </main>
